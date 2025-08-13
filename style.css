@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #7a00ff, #a900ff);
+    color: white;
+    padding: 40px 20px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.header p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Filter Buttons */
+.filter-btns {
+    margin: 20px;
+}
+.filter-btns button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    background: #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.filter-btns button.active,
+.filter-btns button:hover {
+    background: #7a00ff;
+    color: white;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    display: block;
+}
